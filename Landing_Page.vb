@@ -1,17 +1,16 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Landing_Page
 
-    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles btnCustomers.Click
-        Customer.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub lblItem_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles btnItem.Click
+    Private Sub btnItem_Click(sender As Object, e As EventArgs) Handles btnItem.Click
         Item.Show()
         Me.Hide()
     End Sub
 
-    Private Sub lblSale_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles btnSale.Click
+    Private Sub btnCustomers_Click(sender As Object, e As EventArgs) Handles btnCustomers.Click
+        Customer.Show()
+        Me.Hide()
+    End Sub
+    Private Sub btnSale_Click(sender As Object, e As EventArgs) Handles btnSale.Click
         Sale.Show()
         Me.Hide()
     End Sub
@@ -42,4 +41,6 @@ Public Class Landing_Page
             Return
         End If
     End Sub
+
+
 End Class

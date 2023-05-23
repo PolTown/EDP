@@ -22,9 +22,56 @@ Partial Class Sale
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.DataGrid = New System.Windows.Forms.DataGridView()
+        Me.btnPrint = New System.Windows.Forms.Button()
+        Me.btnHome = New System.Windows.Forms.Button()
+        CType(Me.DataGrid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'DataGrid
+        '
+        Me.DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGrid.Location = New System.Drawing.Point(35, 12)
+        Me.DataGrid.Name = "DataGrid"
+        Me.DataGrid.RowHeadersWidth = 51
+        Me.DataGrid.RowTemplate.Height = 24
+        Me.DataGrid.Size = New System.Drawing.Size(674, 413)
+        Me.DataGrid.TabIndex = 0
+        '
+        'btnPrint
+        '
+        Me.btnPrint.Location = New System.Drawing.Point(761, 297)
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Size = New System.Drawing.Size(147, 80)
+        Me.btnPrint.TabIndex = 1
+        Me.btnPrint.Text = "Print"
+        Me.btnPrint.UseVisualStyleBackColor = True
+        '
+        'btnHome
+        '
+        Me.btnHome.Location = New System.Drawing.Point(761, 441)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(155, 57)
+        Me.btnHome.TabIndex = 2
+        Me.btnHome.Text = "Home"
+        Me.btnHome.UseVisualStyleBackColor = True
+        '
+        'Sale
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(960, 531)
+        Me.Controls.Add(Me.btnHome)
+        Me.Controls.Add(Me.btnPrint)
+        Me.Controls.Add(Me.DataGrid)
+        Me.Name = "Sale"
         Me.Text = "Sale"
+        CType(Me.DataGrid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
     End Sub
+
+    Friend WithEvents DataGrid As DataGridView
+    Friend WithEvents btnPrint As Button
+    Friend WithEvents btnHome As Button
 End Class

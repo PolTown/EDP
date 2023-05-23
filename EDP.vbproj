@@ -193,6 +193,9 @@
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sale.resx">
+      <DependentUpon>Sale.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
