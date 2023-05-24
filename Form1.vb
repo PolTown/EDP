@@ -25,7 +25,7 @@ Public Class Form1
         End With
     End Sub
 
-    Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
+    Private Sub btnRegister_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Register.Show()
     End Sub

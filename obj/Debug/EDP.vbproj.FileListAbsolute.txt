@@ -45,3 +45,4 @@ C:\Users\paul\Documents\3rd yr 2nd sem\edp\EDP\obj\Debug\EDP.vbproj.CopyComplete
 C:\Users\paul\Documents\3rd yr 2nd sem\edp\EDP\obj\Debug\EDP.Item.resources
 C:\Users\paul\Documents\3rd yr 2nd sem\edp\EDP\bin\Debug\MySqlBackup.dll
 C:\Users\paul\Documents\3rd yr 2nd sem\edp\EDP\obj\Debug\EDP.Sale.resources
+C:\Users\paul\Documents\3rd yr 2nd sem\edp\EDP\obj\Debug\EDP.Customer.resources

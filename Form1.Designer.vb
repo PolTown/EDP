@@ -27,12 +27,12 @@ Partial Class Form1
         Me.lblPassword = New System.Windows.Forms.Label()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.btnLogin = New System.Windows.Forms.Button()
-        Me.btnRegister = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(211, 36)
+        Me.txtUsername.Location = New System.Drawing.Point(223, 148)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(100, 22)
         Me.txtUsername.TabIndex = 0
@@ -40,7 +40,7 @@ Partial Class Form1
         'lblUsername
         '
         Me.lblUsername.AutoSize = True
-        Me.lblUsername.Location = New System.Drawing.Point(87, 36)
+        Me.lblUsername.Location = New System.Drawing.Point(99, 148)
         Me.lblUsername.Name = "lblUsername"
         Me.lblUsername.Size = New System.Drawing.Size(73, 17)
         Me.lblUsername.TabIndex = 1
@@ -49,7 +49,7 @@ Partial Class Form1
         'lblPassword
         '
         Me.lblPassword.AutoSize = True
-        Me.lblPassword.Location = New System.Drawing.Point(87, 88)
+        Me.lblPassword.Location = New System.Drawing.Point(99, 200)
         Me.lblPassword.Name = "lblPassword"
         Me.lblPassword.Size = New System.Drawing.Size(69, 17)
         Me.lblPassword.TabIndex = 2
@@ -57,35 +57,37 @@ Partial Class Form1
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(211, 88)
+        Me.txtPassword.Location = New System.Drawing.Point(223, 200)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(100, 22)
         Me.txtPassword.TabIndex = 3
         '
         'btnLogin
         '
-        Me.btnLogin.Location = New System.Drawing.Point(147, 140)
+        Me.btnLogin.Location = New System.Drawing.Point(159, 252)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(115, 28)
         Me.btnLogin.TabIndex = 4
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = True
         '
-        'btnRegister
+        'Label1
         '
-        Me.btnRegister.Location = New System.Drawing.Point(147, 174)
-        Me.btnRegister.Name = "btnRegister"
-        Me.btnRegister.Size = New System.Drawing.Size(115, 25)
-        Me.btnRegister.TabIndex = 5
-        Me.btnRegister.Text = "Register"
-        Me.btnRegister.UseVisualStyleBackColor = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Impact", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(94, 55)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(283, 56)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Bits and Bytes"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(423, 232)
-        Me.Controls.Add(Me.btnRegister)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(423, 344)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.lblPassword)
@@ -103,5 +105,5 @@ Partial Class Form1
     Friend WithEvents lblPassword As Label
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnLogin As Button
-    Friend WithEvents btnRegister As Button
+    Friend WithEvents Label1 As Label
 End Class

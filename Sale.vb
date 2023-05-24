@@ -43,5 +43,8 @@ Public Class Sale
         Call importToExcel(Me.DataGrid, "report.xlsx")
     End Sub
 
-
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+        Me.Hide()
+        Landing_Page.Show()
+    End Sub
 End Class
