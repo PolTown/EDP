@@ -28,11 +28,13 @@ Partial Class Form1
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnRegister = New System.Windows.Forms.Button()
+        Me.lnkUser = New System.Windows.Forms.LinkLabel()
         Me.SuspendLayout()
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(223, 148)
+        Me.txtUsername.Location = New System.Drawing.Point(230, 126)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(100, 22)
         Me.txtUsername.TabIndex = 0
@@ -40,7 +42,7 @@ Partial Class Form1
         'lblUsername
         '
         Me.lblUsername.AutoSize = True
-        Me.lblUsername.Location = New System.Drawing.Point(99, 148)
+        Me.lblUsername.Location = New System.Drawing.Point(106, 126)
         Me.lblUsername.Name = "lblUsername"
         Me.lblUsername.Size = New System.Drawing.Size(73, 17)
         Me.lblUsername.TabIndex = 1
@@ -49,7 +51,7 @@ Partial Class Form1
         'lblPassword
         '
         Me.lblPassword.AutoSize = True
-        Me.lblPassword.Location = New System.Drawing.Point(99, 200)
+        Me.lblPassword.Location = New System.Drawing.Point(106, 178)
         Me.lblPassword.Name = "lblPassword"
         Me.lblPassword.Size = New System.Drawing.Size(69, 17)
         Me.lblPassword.TabIndex = 2
@@ -57,7 +59,7 @@ Partial Class Form1
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(223, 200)
+        Me.txtPassword.Location = New System.Drawing.Point(230, 178)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(100, 22)
         Me.txtPassword.TabIndex = 3
@@ -75,18 +77,39 @@ Partial Class Form1
         '
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Impact", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(94, 55)
+        Me.Label1.Location = New System.Drawing.Point(151, 40)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(283, 56)
+        Me.Label1.Size = New System.Drawing.Size(123, 56)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Bits and Bytes"
+        Me.Label1.Text = "Login"
+        '
+        'btnRegister
+        '
+        Me.btnRegister.Location = New System.Drawing.Point(159, 286)
+        Me.btnRegister.Name = "btnRegister"
+        Me.btnRegister.Size = New System.Drawing.Size(115, 28)
+        Me.btnRegister.TabIndex = 5
+        Me.btnRegister.Text = "Register"
+        Me.btnRegister.UseVisualStyleBackColor = True
+        '
+        'lnkUser
+        '
+        Me.lnkUser.AutoSize = True
+        Me.lnkUser.Location = New System.Drawing.Point(334, 361)
+        Me.lnkUser.Name = "lnkUser"
+        Me.lnkUser.Size = New System.Drawing.Size(88, 17)
+        Me.lnkUser.TabIndex = 6
+        Me.lnkUser.TabStop = True
+        Me.lnkUser.Text = "User Manual"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(423, 344)
+        Me.ClientSize = New System.Drawing.Size(423, 387)
+        Me.Controls.Add(Me.lnkUser)
+        Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPassword)
@@ -106,4 +129,6 @@ Partial Class Form1
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnLogin As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnRegister As Button
+    Friend WithEvents lnkUser As LinkLabel
 End Class

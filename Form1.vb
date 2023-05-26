@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.IO
 Public Class Form1
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         With Me
@@ -25,8 +26,19 @@ Public Class Form1
         End With
     End Sub
 
-    Private Sub btnRegister_Click(sender As Object, e As EventArgs)
+    Private Sub btnRegister_Click_1(sender As Object, e As EventArgs) Handles btnRegister.Click
         Me.Hide()
         Register.Show()
     End Sub
+
+    Private Sub lnkUser_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkUser.LinkClicked
+        Dim filePath As String = "C:\Users\paul\Documents\3rd yr 2nd sem\edp\EDP\user manual\user manual.pdf"
+
+        If File.Exists(filePath) Then
+            Process.Start(filePath)
+        Else
+            MessageBox.Show("File not found")
+        End If
+    End Sub
+
 End Class
